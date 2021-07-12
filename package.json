@@ -1,0 +1,39 @@
+{
+  "name": "WordStyle",
+  "version": "1.0.0",
+  "description": "**Background:** Word Style's primary purpose is to help rappers become a better freestyler. Before we begin on the directions for Word Style. Let me make sure that you understand what freestyling is. Freestyling, in this case, is when a rapper is making up the lyrics on the fly. Nothing written down. Just see the word and start rapping about it. Now that we got that cleared up. Lets go on with the direction on how to use Word Style. The user will enter in the time that he/she will attempt to freestyle for. User will also pick an instrumental to rap to as well. Once the user hits the play button the instrumental will start and a random word will be generated on the screen. Rapper will incorporate that word in their freestyle. Rapper will be able to go on to the next word by clicking a button or pressing spacebar. Try and get through as many words as possible before the timer is finished.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JayceeMagpusao/WordStyle.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JayceeMagpusao/WordStyle/issues"
+  },
+  "homepage": "https://github.com/JayceeMagpusao/WordStyle#readme",
+  "dependencies": {
+    "@babel/core": "^7.14.6",
+    "@babel/preset-env": "^7.14.7",
+    "babel-loader": "^8.2.2",
+    "core-js": "^3.15.2",
+    "css-loader": "^5.2.6",
+    "mini-css-extract-plugin": "^2.1.0",
+    "regenerator-runtime": "^0.13.7",
+    "sass": "^1.35.2",
+    "sass-loader": "^12.1.0",
+    "webpack": "^5.44.0",
+    "webpack-cli": "^4.7.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+  
+}

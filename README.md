@@ -1,0 +1,2 @@
+# WordStyle
+JavaScript project

@@ -1,6 +1,6 @@
 let start = document.getElementById('start');
-let reset = document.getElementById('reset');
-let pause = document.getElementById('pause');
+let stop = document.getElementById('stop');
+// let pause = document.getElementById('pause');
 
 let minutes = document.getElementById('minutes');
 let seconds = document.getElementById('seconds');
@@ -32,12 +32,8 @@ start.addEventListener('click', function(){
   startInterval()
 })
 
-reset.addEventListener('click', function(){
+stop.addEventListener('click', function(){
   minutes.value = 0;
   seconds.value = 0;
   stopCountdown();
 })
-
-// pause.addEventListener('click', function(){
-
-// })

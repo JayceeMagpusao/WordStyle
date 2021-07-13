@@ -13,7 +13,7 @@ let seek_slider = document.querySelector(".seek_slider");
 let volume_slider = document.querySelector(".volume_slider");
 let curr_time = document.querySelector(".current-time");
  
-// Specify globally used values
+// variables to be used in functions below
 let track_index = 0;
 let isPlaying = false;
 let updateTimer;
@@ -112,88 +112,79 @@ function resetValues() {
   seek_slider.value = 0;
 }
 
+// toggles between play and pause
 function playpauseTrack() {
-  // Switch between playing and pausing
-  // depending on the current state
-  if (!isPlaying) playTrack();
-  else pauseTrack();
+  !isPlaying ? playTrack() : pauseTrack();
 }
  
+// Play function
 function playTrack() {
-  // Play the loaded track
   curr_track.play();
   isPlaying = true;
  
-  // Replace icon with the pause button
   playpause_button.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
  
+// Pause function
 function pauseTrack() {
-  // Pause the loaded track
   curr_track.pause();
   isPlaying = false;
  
-  // Replace icon with the play icon
   playpause_button.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
  
+// if last track play first track
 function nextTrack() {
-  // Go back to the first track if the
-  // current one is the last in the track list
-  if (track_index < track_list.length - 1)
-    track_index += 1;
-  else track_index = 0;
+  if (track_index < track_list.length - 1){
+    track_index++;
+  } else {
+    track_index = 0;
+  };
  
-  // Load and play the new track
   loadTrack(track_index);
   playTrack();
 }
  
+// play previous track
 function prevTrack() {
-  // Go back to the last track if the
-  // current one is the first in the track list
-  if (track_index > 0)
+  if (track_index > 0){
     track_index -= 1;
-  else track_index = track_list.length;
-   
-  // Load and play the new track
+  } else {
+    track_index = track_list.length;
+  } 
+
   loadTrack(track_index);
   playTrack();
 }
 
+//slider calculates position on track
 function seekTo() {
-  // Calculate the seek position by the
-  // percentage of the seek slider
-  // and get the relative duration to the track
   seekto = curr_track.duration * (seek_slider.value / 100);
  
-  // Set the current track position to the calculated seek position
   curr_track.currentTime = seekto;
 }
- 
+
+// slider adjusts volume
 function seekVolume() {
-  // Set the volume according to the
-  // percentage of the volume slider set
   curr_track.volume = volume_slider.value / 100;
 }
  
 function seekUpdate() {
   let seekPosition = 0;
  
-  // Check if the current track duration is a legible number
   if (!isNaN(curr_track.duration)) {
     seekPosition = curr_track.currentTime * (100 / curr_track.duration);
     seek_slider.value = seekPosition;
  
-    // Calculate the time left and the total duration
+    // calculates time played of track
     let currentMinutes = Math.floor(curr_track.currentTime / 60);
     let currentSeconds = Math.floor(curr_track.currentTime - currentMinutes * 60);
  
-    // Add a zero to the single digit time values
+    // Adds zero in front if single digits
     if (currentSeconds < 10) { currentSeconds = "0" + currentSeconds; }
     if (currentMinutes < 10) { currentMinutes = "0" + currentMinutes; }
  
-    // Display the updated duration
+    // Displays time
     curr_time.textContent = currentMinutes + ":" + currentSeconds;
   }
 }

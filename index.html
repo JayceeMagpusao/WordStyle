@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="./dist/main.css" />
+  <link rel="stylesheet" href="./stylesheets/index.css" />
   <script src="./dist/main.js"></script>
   <script src="https://use.fontawesome.com/076d84f573.js"></script>
 
@@ -23,6 +23,7 @@
     <button id="start" class="button">Start</button>
     <button id="pause" class="button">Pause</button>
     <button id="stop" class="button">Stop</button>
+
     <script src="./src/countdown.js"></script>
   </div>
 
@@ -82,13 +83,16 @@
   </div>
 
   <div class="recorder">
-    <p>  
-      <button id="startRecord">Start</button>
+    <p>
+      <button id=startRecord>start</button>
+      <button id=stopRecord disabled>stop</button>
     </p>
     <p>
-      <button id="startRecord">Stop</button>
-      <a id="download"></a>
+      <audio id=recordedAudio></audio>
+      <a id=audioDownload></a>
     </p>
+
+    <script src="./src/recorder.js"></script>
   </div>
 </body>
 

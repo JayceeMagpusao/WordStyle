@@ -1,10 +1,11 @@
+var audioChunks;
 startRecord.onclick = e => {
-  // startRecord.disabled = true;
-  // stopRecord.disabled=false;
-  // need permission from user to access mic
+  startRecord.disabled = true;
+  stopRecord.disabled=false;
+  // This will prompt for permission if not allowed earlier
   navigator.mediaDevices.getUserMedia({audio:true})
     .then(stream => {
-      let parts = []; 
+      audioChunks = []; 
       rec = new MediaRecorder(stream);
       rec.ondataavailable = e => {
         audioChunks.push(e.data);
@@ -22,9 +23,8 @@ startRecord.onclick = e => {
     })
     .catch(e=>console.log(e));
 }
-
 stopRecord.onclick = e => {
-  // startRecord.disabled = false;
-  // stopRecord.disabled=true;
+  startRecord.disabled = false;
+  stopRecord.disabled=true;
   rec.stop();
 }

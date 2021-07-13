@@ -26,17 +26,43 @@ let track_list = [
   {
     name: "Comeback",
     producer: "Drian",
-    path: "Comeback.mp3"
+    path: "../mp3/Comeback.mp3"
   },
+
   {
     name: "Forever Miss",
     producer: "Drian",
-    path: "Forever Miss.mp3"
+    path: "../mp3/Forever_Miss.mp3"
   },
+
   {
     name: "French Bread",
     producer: "Drian",
-    path: "French_Bread.mp3",
+    path: "../mp3/French_Bread.mp3"
+  },
+
+  {
+    name: "ill",
+    producer: "Drian",
+    path: "../mp3/ill.mp3"
+  },
+
+  {
+    name: "Meditation",
+    producer: "Drian",
+    path: "../mp3/Meditation.mp3"
+  },
+
+  {
+    name: "Redemption",
+    producer: "Drian",
+    path: "../mp3/Redemption.mp3"
+  },
+
+  {
+    name: "The Spot",
+    producer: "Drian",
+    path: "../mp3/The_Spot.mp3"
   },
 ];
 
@@ -98,8 +124,8 @@ function playTrack() {
   curr_track.play();
   isPlaying = true;
  
-  // Replace icon with the pause icon
-  playpause_button.innerHTML = '<button>Pause</button>';
+  // Replace icon with the pause button
+  playpause_button.innerHTML = '<i class="fa fa-pause-circle fa-5x"></i>';
 }
  
 function pauseTrack() {
@@ -108,7 +134,7 @@ function pauseTrack() {
   isPlaying = false;
  
   // Replace icon with the play icon
-  playpause_button.innerHTML = '<button>Play</button>';
+  playpause_button.innerHTML = '<i class="fa fa-play-circle fa-5x"></i>';
 }
  
 function nextTrack() {
@@ -145,7 +171,7 @@ function seekTo() {
   curr_track.currentTime = seekto;
 }
  
-function setVolume() {
+function seekVolume() {
   // Set the volume according to the
   // percentage of the volume slider set
   curr_track.volume = volume_slider.value / 100;

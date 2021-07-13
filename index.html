@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./dist/main.css" />
   <script src="./dist/main.js"></script>
+  <script src="https://use.fontawesome.com/076d84f573.js"></script>
 
   <title>Word Style</title>
 </head>
@@ -20,7 +21,7 @@
       <p id="colon" class="colon">:</p>
     <input id="seconds" type="number" max="59" min="0" value="0" class="time">
     <button id="start" class="button">Start</button>
-    <!-- <button id="pause" class="button">Pause</button> -->
+    <button id="pause" class="button">Pause</button>
     <button id="stop" class="button">Stop</button>
     <script src="./src/countdown.js"></script>
   </div>
@@ -51,9 +52,15 @@
 
     <!-- buttons for music player -->
     <div class="buttons">
-      <button class="prev-track" onclick="prevTrack()">Prev</button>
-      <button class="playpause-track" onclick="playpauseTrack()">Play</button>
-      <button class="next-track" onclick="nextTrack()">Next</button>
+      <div class="prev-track" onclick="prevTrack()">
+        <i class="fa fa-step-backward fa-2x"></i>
+      </div>
+      <div class="playpause-track" onclick="playpauseTrack()">
+        <i class="fa fa-play-circle fa-5x"></i>
+      </div>
+      <div class="next-track" onclick="nextTrack()">
+        <i class="fa fa-step-forward fa-2x"></i>
+      </div>
     </div>
 
     <!-- slider for range finder -->
@@ -72,6 +79,16 @@
     </div>
     
     <script src="./src/instrumental.js"></script>
+  </div>
+
+  <div class="recorder">
+    <p>  
+      <button id="startRecord">Start</button>
+    </p>
+    <p>
+      <button id="startRecord">Stop</button>
+      <a id="download"></a>
+    </p>
   </div>
 </body>
 

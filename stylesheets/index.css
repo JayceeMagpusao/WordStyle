@@ -9,10 +9,11 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  position: relative;
+  position: absolute;
   bottom: 0px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .countdown {
@@ -179,4 +180,21 @@
 i.volume-down,
 i.volume-up {
   padding: 10px;
+}
+
+/* random word */
+#word {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.word {
+  font-size: 15px;
+}
+
+#word p {
+  font-size: 40px;
+  margin-bottom: 15px;
 }

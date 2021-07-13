@@ -11,6 +11,7 @@
   <title>Word Style</title>
 </head>
 
+<!-- html for countdown -->
 <body>
   <div id="countdown">
     <p id="minutes-label" class="label">Minutes</p>
@@ -24,17 +25,53 @@
     <script src="./src/countdown.js"></script>
   </div>
 
+  <!-- html for word generator -->
   <div id="word">
     <script>function genWord() {
       let word=['ice cream', 'SQL', 'JavaScript', 'Ruby', 'Rails', 'React', 'Chiefs'];
       let para=document.querySelector("#word p")
       para.innerHTML = word[Math.floor(Math.random()*word.length)];
       window.onkeydown = function(event){
+        if(keyCode === 32){
         genWord();
-      }
+        };
+      };
     }</script>
     <p></p>
     <button onclick="genWord();" class="word">Next Word</button>
+  </div>
+
+  <!-- html for instrumental -->
+  <div id="instrumental">
+    <div class="details">
+      <div class="now-playing">PLAYING</div>
+      <div class="track-name">Track Name</div>
+      <div class="producer">Producer</div>
+    </div>
+
+    <!-- buttons for music player -->
+    <div class="buttons">
+      <button class="prev-track" onclick="prevTrack()">Prev</button>
+      <button class="playpause-track" onclick="playpauseTrack()">Play</button>
+      <button class="next-track" onclick="nextTrack()">Next</button>
+    </div>
+
+    <!-- slider for range finder -->
+    <div class="slider">
+      <div class="current-time">00:00</div>
+      <input type="range" min="1" max="100" value="0" 
+        class="seek_slider" onchange="seekTo()">
+    </div>
+
+    <!-- slider for volume -->
+    <div class="slider">
+      <i class="volume-down"></i>
+      <input type="range" min="1" max="100" value="99" 
+        class="volume_slider" onchange="seekVolume()">
+      <i class="volume-up"></i>
+    </div>
+    
+    <script src="./src/instrumental.js"></script>
   </div>
 </body>
 

@@ -1,7 +1,6 @@
+let background = document.getElementById("#countdown");
 let start = document.getElementById('start');
 let stop = document.getElementById('stop');
-// let pause = document.getElementById('pause');
-
 let minutes = document.getElementById('minutes');
 let seconds = document.getElementById('seconds');
 
@@ -11,6 +10,8 @@ function countdown(){
   if(minutes.value == 0 && seconds.value == 0){
     minutes.value = 0;
     seconds.value = 0;
+    document.getElementById("#countdown").backgroundColor = "red";
+    stopCountdown();
   } else if(minutes.value != 0 && seconds.value == 0){
     seconds.value = 59;
     minutes.value--;

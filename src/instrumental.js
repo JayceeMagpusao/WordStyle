@@ -1,5 +1,5 @@
 // variables for class details
-let now_playing = document.querySelector(".now-playing");
+// let now_playing = document.querySelector(".now-playing");
 let track_name = document.querySelector(".track-name");
 let producer = document.querySelector(".producer");
 
@@ -78,8 +78,8 @@ function loadTrack(track_index) {
   // Update details of the track
   track_name.textContent = track_list[track_index].name;
   producer.textContent = track_list[track_index].producer;
-  now_playing.textContent =
-     "PLAYING " + track_name.textContent;
+  // now_playing.textContent =
+  //    "PLAYING " + track_name.textContent;
  
   // for updating the seek slider
   updateTimer = setInterval(seekUpdate, 1000);

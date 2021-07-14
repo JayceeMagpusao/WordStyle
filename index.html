@@ -18,10 +18,10 @@
     <p id="minutes-label" class="label">Minutes</p>
     <p id="seconds-label" class="label">Seconds</p>
     <input id="minutes" type="number" max="60" min="0" value="0" class="time">
-      <p id="colon" class="colon">:</p>
+    <p id="colon" class="colon">:</p>
     <input id="seconds" type="number" max="59" min="0" value="0" class="time">
     <button id="start" class="button">Start</button>
-    <button id="pause" class="button">Pause</button>
+    <!-- <button id="pause" class="button">Pause</button> -->
     <button id="stop" class="button">Stop</button>
 
     <script src="./src/countdown.js"></script>
@@ -46,7 +46,7 @@
   <!-- html for instrumental -->
   <div id="instrumental">
     <div class="details">
-      <div class="now-playing">PLAYING</div>
+      <!-- <div class="now-playing">PLAYING</div> -->
       <div class="track-name">Track Name</div>
       <div class="producer">Producer</div>
     </div>
@@ -73,16 +73,16 @@
 
     <!-- slider for volume -->
     <div class="slider">
-      <i class="volume-down"></i>
+      <div class="volume-down">volume</div>
       <input type="range" min="1" max="100" value="99" 
         class="volume_slider" onchange="seekVolume()">
-      <i class="volume-up"></i>
+      <div class="volume-up"></div>
     </div>
     
     <script src="./src/instrumental.js"></script>
   </div>
 
-  <div class="recorder">
+  <div id="recorder">
     <p>
       <button id=startRecord>start</button>
       <button id=stopRecord disabled>stop</button>

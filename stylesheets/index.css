@@ -18,6 +18,25 @@
   grid-area: 3 / 2 / 3 / 2;
 }
 
+.button {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #60a3bc;
+	padding: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+
+.button {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(238, 12, 12, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
+
 #stop {
   grid-area: 3 / 4 / 3 / 4;
 }
@@ -52,7 +71,7 @@
   margin: 0;
   justify-self: center;
   align-self: center;
-  font-size: 30px;
+  font-size: 35px;
 }
 
 .time {
@@ -64,16 +83,6 @@
   height: 50px
 }
 
-#start:hover,
-#start:hover {
-  animation: 1s;
-  box-shadow: 0 0 0 2em rgba(#fff, 0);
-}
-
-@keyframes start {
-  0% { box-shadow: 0 0 0 0
-    var(--hover);}
-}
 
 
 
@@ -117,6 +126,24 @@
   top: 0;
 }
 
+.word {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #60a3bc;
+	padding: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+
+.word {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(238, 12, 12, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
+}
 
 
 
@@ -140,15 +167,15 @@
 
 
 
-
+/* instrumental */
 #instrumental {
   height: 25vh;
-  width: 100px;
+  width: 300px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  margin-top: 20%;
-  margin-left: 48%;
+  margin-top: 18%;
+  margin-left: 40%;
 }
 
 .details {
@@ -159,12 +186,12 @@
   margin: 25px
 }
 
-.now-playing {
-  font-size: 1rem;
-}
-
 .track-name {
+  width: 300px;
   font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .producer {
@@ -204,6 +231,25 @@
 #recorder {
   top: 0;
   position: absolute;
+}
+
+#startRecord, #stopRecord {
+	color: #fff !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	background: #60a3bc;
+	padding: 20px;
+	border-radius: 50px;
+	display: inline-block;
+	border: none;
+	transition: all 0.4s ease 0s;
+}
+
+#startRecord, #stopRecord {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(238, 12, 12, 0.57);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+	transition: all 0.4s ease 0s;
 }
 
 /* media */

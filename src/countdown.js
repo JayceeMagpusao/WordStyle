@@ -1,4 +1,4 @@
-let background = document.getElementById("#countdown");
+let background = document.getElementById("countdown");
 let start = document.getElementById('start');
 let stop = document.getElementById('stop');
 let minutes = document.getElementById('minutes');
@@ -10,7 +10,7 @@ function countdown(){
   if(minutes.value == 0 && seconds.value == 0){
     minutes.value = 0;
     seconds.value = 0;
-    document.getElementById("#countdown").backgroundColor = "red";
+    background.style.backgroundColor = "red";
     stopCountdown();
   } else if(minutes.value != 0 && seconds.value == 0){
     seconds.value = 59;
@@ -22,6 +22,7 @@ function countdown(){
 
 function stopCountdown(){
   clearInterval(startCountdown);
+  startCountdown = null;
 }
 
 start.addEventListener('click', function(){
@@ -30,7 +31,7 @@ start.addEventListener('click', function(){
       countdown();
     }, 1000);
   }
-  startInterval()
+  startInterval();
 })
 
 stop.addEventListener('click', function(){

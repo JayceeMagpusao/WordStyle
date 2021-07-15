@@ -21,8 +21,8 @@ startRecord.onclick = e => {
       }
     rec.start();  
     })
-    .catch(e=>console.log(e));
 }
+
 stopRecord.onclick = e => {
   startRecord.disabled = false;
   stopRecord.disabled=true;

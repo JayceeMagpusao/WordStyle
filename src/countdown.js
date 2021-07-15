@@ -1,4 +1,3 @@
-let background = document.getElementById("countdown");
 let start = document.getElementById('start');
 let stop = document.getElementById('stop');
 let minutes = document.getElementById('minutes');
@@ -39,3 +38,11 @@ stop.addEventListener('click', function(){
   seconds.value = 0;
   stopCountdown();
 })
+
+function randomCountdown () {
+  let randomMinutes = Math.floor(Math.random()*59);
+  let randomSeconds = Math.floor(Math.random()*59);
+
+  minutes.value = randomMinutes;
+  seconds.value = randomSeconds;
+}

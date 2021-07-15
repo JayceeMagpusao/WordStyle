@@ -195,7 +195,7 @@
 }
 
 .producer {
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 #instrumental .buttons {
@@ -207,7 +207,8 @@
 
 .playpause-track,
 .prev-track,
-.next-track {
+.next-track,
+.random-track {
   padding: 25px;
   opacity: 0.8;
   transition: opacity 0.2s;
@@ -215,7 +216,8 @@
 
 .playpause-track:hover,
 .prev-track:hover,
-.next-track:hover {
+.next-track:hover,
+.random-track:hover {
   opacity: 1.0;
 }
 
@@ -253,6 +255,11 @@
 	transition: all 0.4s ease 0s;
 }
 
+#recorder-directions {
+  font-size: 30px;
+  color: ;
+}
+
 /* media */
 #media {
   position: absolute;
@@ -277,3 +284,4 @@
   position: absolute;
   bottom: 0;
 }
+

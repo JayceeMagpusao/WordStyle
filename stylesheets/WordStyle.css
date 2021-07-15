@@ -1,0 +1,31 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 4125526, 2021-07-14T19:26:45-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AdrenalinaFree by BRtype
+ * URL: https://www.myfonts.com/fonts/brtype/adrenalina/demo/
+ * Copyright: Copyright (c) 2014 by Gustavo Lassala | BRtype. All rights reserved.
+ * 
+ * 
+ * © 2021 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: "AdrenalinaFree";
+  src: url('webFonts/AdrenalinaFree/font.woff2') format('woff2'), url('webFonts/AdrenalinaFree/font.woff') format('woff');
+}
+
+/* directions */
+#directions {
+  font-size: 30px;
+  font-family: AdrenalinaFree;
+}

@@ -64,6 +64,30 @@ let track_list = [
     producer: "Drian",
     path: "../mp3/The_Spot.mp3"
   },
+
+  {
+    name: "Still D.R.E.",
+    producer: "Dr. Dre",
+    path: "../mp3/Still_D.R.E..mp3"
+  },
+
+  {
+    name: "Nuthin But A G Thang",
+    producer: "Dr. Dre",
+    path: "../mp3/Nuthin_But_A_G_Thang.mp3"
+  },
+
+  {
+    name: "Shook Ones",
+    producer: "Dr. Dre",
+    path: "../mp3/Shook_Ones.mp3"
+  },
+  
+  {
+    name: "Baby Blue",
+    producer: "Dr. Dre",
+    path: "../mp3/Baby_Blue.mp3"
+  },  
 ];
 
 function loadTrack(track_index) {
@@ -179,4 +203,16 @@ function randomTrack() {
 
   loadTrack(track_index);
   playTrack();
+}
+
+function trackNameList() {
+  let select = document.getElementById("trackNameList")
+  for(let i = 0; i < track_list.length; i++){
+    select.options[select.options.length] = new Option(track_list[i], i)
+    // let option = document.createElement("option"),
+    //   val = document.createTextNode(track_list[i]);
+    // option.appendChild(val);
+    // option.setAttribute("value",track_list[i]);
+    // Selection.insertBefore(option, select.lastChild);
+  }
 }

@@ -39,8 +39,8 @@ stop.addEventListener('click', function(){
   stopCountdown();
 })
 
-function randomCountdown () {
-  let randomMinutes = Math.floor(Math.random()*59);
+function randomCountdown() {
+  let randomMinutes = Math.floor(Math.random()*4);
   let randomSeconds = Math.floor(Math.random()*59);
 
   minutes.value = randomMinutes;

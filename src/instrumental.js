@@ -79,13 +79,13 @@ let track_list = [
 
   {
     name: "Shook Ones",
-    producer: "Dr. Dre",
+    producer: "Mobb Depp",
     path: "../mp3/Shook_Ones.mp3"
   },
   
   {
     name: "Baby Blue",
-    producer: "Dr. Dre",
+    producer: "Mark Ronson",
     path: "../mp3/Baby_Blue.mp3"
   },  
 ];
@@ -205,14 +205,14 @@ function randomTrack() {
   playTrack();
 }
 
-function trackNameList() {
-  let select = document.getElementById("trackNameList")
-  for(let i = 0; i < track_list.length; i++){
-    select.options[select.options.length] = new Option(track_list[i], i)
-    // let option = document.createElement("option"),
-    //   val = document.createTextNode(track_list[i]);
-    // option.appendChild(val);
-    // option.setAttribute("value",track_list[i]);
-    // Selection.insertBefore(option, select.lastChild);
+function dropdownPlay() {
+  let dropdownIndex = document.getElementById("trackNameList").value;
+  track_index = dropdownIndex
+
+  if (dropdownIndex === "default"){
+    return;
+  } else {
+    loadTrack(track_index);
+    playTrack();
   }
 }

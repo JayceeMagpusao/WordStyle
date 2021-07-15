@@ -210,7 +210,8 @@
   </div>
 
   <div id="directions">
-    <ul>
+    <h4 id="directionsLabel">Directions:</h4>
+    <ul id="directionsList">
       <li>Select track and starting point</li>
       <li>Input desired time to rap</li>
       <li>Click 'Record' button to record audio</li>
@@ -223,7 +224,7 @@
   <div #features>
     <button onclick="randomTrack()" class="random">Randomize Instrumental</button>
     <button onclick="randomCountdown()" class="random">Randomize Countdown</button>
-    <select name="trackNameList" id="trackNameList">
+    <select onclick="dropdownPlay()"name="trackNameList" id="trackNameList">
       <option value="default">No Selection</option>
       <option value="0">Comeback</option>
       <option value="1">Forever Miss</option>

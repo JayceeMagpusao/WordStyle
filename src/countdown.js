@@ -9,7 +9,7 @@ function countdown(){
   if(minutes.value == 0 && seconds.value == 0){
     minutes.value = 0;
     seconds.value = 0;
-    background.style.backgroundColor = "red";
+    alert("Congrats! You finished rapping! If you clicked the 'record' button hit the 'stop' and you can download the mp3 file");
     stopCountdown();
   } else if(minutes.value != 0 && seconds.value == 0){
     seconds.value = 59;

@@ -293,11 +293,13 @@ body {
   position: absolute;
   top: 0;
   right: 0;
+  border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #github,
 #linkedin {
-  padding: 0;
   opacity: 0.7;
   transition: opacity 0.2s;
 }
@@ -305,6 +307,11 @@ body {
 #github:hover,
 #linkedin:hover {
   opacity: 1.0;
+}
+
+.mediaButton {
+  padding: 0;
+  border: 0;
 }
 
 /* directions */
@@ -319,6 +326,8 @@ body {
   display: flex;
   flex-direction: column;
   align-self: center;
+  border-color: black;
+  border-style: solid;
 }
 
 #directionsLabel {
@@ -345,7 +354,7 @@ body {
 	padding: 20px;
 	border-radius: 50px;
 	display: inline-block;
-	border: none;
+	border-color: black;
 	transition: all 0.4s ease 0s;
 }
 
@@ -356,7 +365,7 @@ body {
 }
 
 #trackNameList {
-	color: rgb(255, 255, 255) !important;
+	color: rgb(255, 255, 255);
 	text-transform: uppercase;
 	text-decoration: none;
 	background: rgba(227,24,54);
@@ -365,6 +374,7 @@ body {
 	display: inline-block;
 	border: none;
 	transition: all 0.4s ease 0s;
+  margin-bottom: 15px;
 }
 
 #trackNameList:hover {
@@ -384,8 +394,10 @@ body {
   justify-items: center;
   align-content: center;
   bottom: 40%;
+  padding-top: 15px;
 }
 
 #features {
   bottom: 40%;
+  border: solid;
 }

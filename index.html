@@ -196,13 +196,13 @@
   </div>
 
   <div id="media">
-    <button>
+    <button class="mediaButton">
       <a id="github" href="https://github.com/JayceeMagpusao">
       <img src="https://cdn.iconscout.com/icon/free/png-512/github-154-675675.png"
         width="40"></a>
     </button>
 
-    <button>
+    <button class="mediaButton">
       <a id="linkedin" href="https://www.linkedin.com/in/jaycee-magpusao-profile/">
       <img src="https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-icon-png.png"
         width="40"></a>
@@ -212,23 +212,23 @@
   <div id="directions">
     <h4 id="directionsLabel">Directions:</h4>
     <ul id="directionsList">
-      <li>Select track and starting point</li>
-      <li>Input desired time to rap</li>
-      <li>Click 'Record' button to record audio</li>
-      <li>Click 'Start' button to start countdown</li>
-      <li>Click 'Next Word' to generate random words</li>
+      <li>Select track and starting point.</li>
+      <li>Input desired time to rap.</li>
+      <li>Click 'Record' button to record audio.</li>
+      <li>Click 'Start' button to start countdown.</li>
+      <li>Click 'Next Word' to generate random words.</li>
       <li>Have fun!</li>
     </ul>
   </div>
 
   <div id="features">
-    <p id="featureDescription">Click on 'Randomize Instrumental' to randomly play an instrumental</p>
+    <p id="featureDescription">Click on 'Randomize Instrumental' to randomly play an instrumental.</p>
       <button onclick="randomTrack()" class="random">Randomize Instrumental</button>
     <p id="featureDescription">'Randomize Countdown' will randomly generate countdown to something under 5 minutes.</p>
       <button onclick="randomCountdown()" class="random">Randomize Countdown</button>
-    <p id="featureDescription">'Feeling Brave?' will randomly generate both instrumental and countdown</p>
+    <p id="featureDescription">'Feeling Brave?' will randomly generate both instrumental and countdown.</p>
       <button onclick="randomCountdown(); randomTrack()" class="random">Feeling Brave?</button>
-    <p id="featureDescription">Dropdown below will play instrumental selected</p>
+    <p id="featureDescription">Dropdown below will play instrumental selected.</p>
       <select onclick="dropdownPlay()"name="trackNameList" id="trackNameList">
         <option value="default">No Selection</option>
         <option value="0">Comeback</option>

@@ -14,7 +14,7 @@
 </head>
 
 <!-- html for countdown -->
-<body background="/IMG_2049.jpg">
+<body>
   <div id="countdown">
     <p id="minutes-label" class="label">Minutes</p>
     <p id="seconds-label" class="label">Seconds</p>
@@ -222,22 +222,27 @@
   </div>
 
   <div id="features">
-    <button onclick="randomTrack()" class="random">Randomize Instrumental</button>
-    <button onclick="randomCountdown()" class="random">Randomize Countdown</button>
-    <select onclick="dropdownPlay()"name="trackNameList" id="trackNameList">
-      <option value="default">No Selection</option>
-      <option value="0">Comeback</option>
-      <option value="1">Forever Miss</option>
-      <option value="2">French Bread</option>
-      <option value="3">ill</option>
-      <option value="4">Meditation</option>
-      <option value="5">Redemption</option>
-      <option value="6">The Spot</option>
-      <option value="7">Still D.R.E.</option>
-      <option value="8">Nuthin But A G Thang</option>
-      <option value="9">Shook Ones</option>
-      <option value="10">Baby Blue</option>
-    </select>
+    <p id="featureDescription">Click on 'Randomize Instrumental' to randomly play an instrumental</p>
+      <button onclick="randomTrack()" class="random">Randomize Instrumental</button>
+    <p id="featureDescription">'Randomize Countdown' will randomly generate countdown to something under 5 minutes.</p>
+      <button onclick="randomCountdown()" class="random">Randomize Countdown</button>
+    <p id="featureDescription">'Feeling Brave?' will randomly generate both instrumental and countdown</p>
+      <button onclick="randomCountdown(); randomTrack()" class="random">Feeling Brave?</button>
+    <p id="featureDescription">Dropdown below will play instrumental selected</p>
+      <select onclick="dropdownPlay()"name="trackNameList" id="trackNameList">
+        <option value="default">No Selection</option>
+        <option value="0">Comeback</option>
+        <option value="1">Forever Miss</option>
+        <option value="2">French Bread</option>
+        <option value="3">ill</option>
+        <option value="4">Meditation</option>
+        <option value="5">Redemption</option>
+        <option value="6">The Spot</option>
+        <option value="7">Still D.R.E.</option>
+        <option value="8">Nuthin But A G Thang</option>
+        <option value="9">Shook Ones</option>
+        <option value="10">Baby Blue</option>
+      </select>
   </div>
 </body>
 

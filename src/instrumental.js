@@ -26,67 +26,67 @@ let track_list = [
   {
     name: "Comeback",
     producer: "Drian",
-    path: "../mp3/Comeback.mp3"
+    path: "./mp3/Comeback.mp3"
   },
 
   {
     name: "Forever Miss",
     producer: "Drian",
-    path: "../mp3/Forever_Miss.mp3"
+    path: "./mp3/Forever_Miss.mp3"
   },
 
   {
     name: "French Bread",
     producer: "Drian",
-    path: "../mp3/French_Bread.mp3"
+    path: "./mp3/French_Bread.mp3"
   },
 
   {
     name: "ill",
     producer: "Drian",
-    path: "../mp3/ill.mp3"
+    path: "./mp3/ill.mp3"
   },
 
   {
     name: "Meditation",
     producer: "Drian",
-    path: "../mp3/Meditation.mp3"
+    path: "./mp3/Meditation.mp3"
   },
 
   {
     name: "Redemption",
     producer: "Drian",
-    path: "../mp3/Redemption.mp3"
+    path: "./mp3/Redemption.mp3"
   },
 
   {
     name: "The Spot",
     producer: "Drian",
-    path: "../mp3/The_Spot.mp3"
+    path: "./mp3/The_Spot.mp3"
   },
 
   {
     name: "Still D.R.E.",
     producer: "Dr. Dre",
-    path: "../mp3/Still_D.R.E..mp3"
+    path: "./mp3/Still_D.R.E..mp3"
   },
 
   {
     name: "Nuthin But A G Thang",
     producer: "Dr. Dre",
-    path: "../mp3/Nuthin_But_A_G_Thang.mp3"
+    path: "./mp3/Nuthin_But_A_G_Thang.mp3"
   },
 
   {
     name: "Shook Ones",
     producer: "Mobb Depp",
-    path: "../mp3/Shook_Ones.mp3"
+    path: "./mp3/Shook_Ones.mp3"
   },
   
   {
     name: "Baby Blue",
     producer: "Mark Ronson",
-    path: "../mp3/Baby_Blue.mp3"
+    path: "./mp3/Baby_Blue.mp3"
   },  
 ];
 

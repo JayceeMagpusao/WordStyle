@@ -67,6 +67,8 @@ body {
 /* countdown input */
 #seconds {
   grid-area: 2 / 4 / 2 / 4;
+  justify-self: center;
+  align-self: center;
 }
 
 #colon {

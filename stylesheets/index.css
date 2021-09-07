@@ -4,7 +4,7 @@ body {
 
 .wordstyle-container {
   display: flex;
-  height: 99vh;
+  height: 98vh;
   justify-content: space-between;
 }
 
@@ -290,11 +290,18 @@ body {
 
 /* media */
 #media {
-  top: 0;
-  right: 0;
-  border: 0;
-  margin: 0;
-  padding: 0;
+  display: flex;
+  border-style: solid;
+  background: rgba(227,24,54);
+}
+
+.social-links {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 500;
+  color: black;
+  text-shadow: 0 0 20px rgba(255, 184, 28);
+  padding-top: 2.5%;
 }
 
 #github,
@@ -311,6 +318,16 @@ body {
 .mediaButton {
   padding: 0;
   border: 0;
+  font-size: 2rem;
+  background-color: rgb(255,255,255);
+}
+
+#github {
+  color: black;
+}
+
+#linkedin {
+  color: rgb(10,102,194);
 }
 
 /* directions */
@@ -342,7 +359,7 @@ body {
   display: flex;
   right: 0;
   flex-direction: column;
-  margin-bottom: 70%;
+  margin-bottom: 60%;
 }
 
 .random {

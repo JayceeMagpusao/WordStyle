@@ -33,4 +33,3 @@ stopRecord.onclick = e => {
   stopRecord.disabled=true;
   rec.stop();
 }
-

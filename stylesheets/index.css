@@ -30,6 +30,7 @@ body {
 /* button layout */
 #start {
   grid-area: 3 / 2 / 3 / 2;
+  height: 65%;
 }
 
 .button {
@@ -37,7 +38,6 @@ body {
 	text-transform: uppercase;
 	text-decoration: none;
 	background: rgba(227,24,54);
-	padding: 20px;
 	border-radius: 25px;
 	display: inline-block;
 	border: none;
@@ -53,6 +53,7 @@ body {
 
 #stop {
   grid-area: 3 / 4 / 3 / 4;
+  height: 65%;
 }
 
 /* labels layout */
@@ -290,6 +291,9 @@ body {
   text-shadow: 0 0 20px rgba(255, 184, 28);
 }
 
+#recordingSession {
+  
+}
 /* media */
 #media {
   display: flex;

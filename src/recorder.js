@@ -1,5 +1,9 @@
-var audioChunks;
+let audioChunks;
+
 startRecord.onclick = e => {
+  debugger
+  const element = document.getElementById("recordingSession");
+  element.innerHTML = "Recording in session";
   startRecord.disabled = true;
   stopRecord.disabled=false;
   // This will prompt for permission if not allowed earlier
@@ -10,7 +14,7 @@ startRecord.onclick = e => {
       rec.ondataavailable = e => {
         audioChunks.push(e.data);
         if (rec.state == "inactive"){
-          let blob = new Blob(audioChunks,{type:'audio/x-mpeg-3'});
+          let blob = new Blob(audioChunks,{type:'audio/mpeg-3'});
           recordedAudio.src = URL.createObjectURL(blob);
           recordedAudio.controls=true;
           recordedAudio.autoplay=true;
@@ -24,7 +28,10 @@ startRecord.onclick = e => {
 }
 
 stopRecord.onclick = e => {
+  const element = document.getElementById("recordingSession");
+  element.innerHTML = "";
   startRecord.disabled = false;
   stopRecord.disabled=true;
   rec.stop();
 }
+

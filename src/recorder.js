@@ -1,7 +1,6 @@
 let audioChunks;
 
 startRecord.onclick = e => {
-  debugger
   const element = document.getElementById("recordingSession");
   element.innerHTML = "Recording in session";
   startRecord.disabled = true;

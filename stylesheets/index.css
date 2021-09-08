@@ -292,7 +292,15 @@ body {
 }
 
 #recordingSession {
-  
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(255, 184, 28);
+	transition: all 0.4s ease 0s;
+  background-color: rgba(255, 184, 28);
+  color: rgba(227,24,54);
+  width: fit-content;
+  margin-left: 25%;
+  font-weight: 600;
+  font-size: 45px;
 }
 /* media */
 #media {

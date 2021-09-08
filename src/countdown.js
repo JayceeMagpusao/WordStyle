@@ -25,6 +25,7 @@ function stopCountdown(){
 }
 
 start.addEventListener('click', function(){
+  stopCountdown();
   function startInterval(){
     startCountdown = setInterval(function() {
       countdown();

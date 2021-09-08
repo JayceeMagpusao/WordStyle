@@ -25,6 +25,10 @@ controls that user will need to operate Word Style.\
 Wednesday: Finish all functionalities and concentrate on styling.\
 Thursday Morning: Deploy to Github.
 
-**Additional Features**
+**Additional Features:**
 1. User will be able to record session.
 2. User will be able to download session.
+
+**Jaycee Magpusao's socials:**\
+[Jaycee's LinkedIn](https://www.linkedin.com/in/jaycee-magpusao-profile/)\
+[Jaycee's GitHub](https://github.com/JayceeMagpusao)

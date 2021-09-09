@@ -42,15 +42,15 @@ let track_list = [
   },
 
   {
-    name: "ill",
-    producer: "Drian",
-    path: "./mp3/ill.mp3"
+    name: "Drop",
+    producer: "Timbaland",
+    path: "./mp3/Drop.mp3"
   },
 
   {
-    name: "Meditation",
-    producer: "Drian",
-    path: "./mp3/Meditation.mp3"
+    name: "BOP",
+    producer: "Jetsonmade",
+    path: "./mp3/BOP.mp3"
   },
 
   {
@@ -60,9 +60,9 @@ let track_list = [
   },
 
   {
-    name: "The Spot",
-    producer: "Drian",
-    path: "./mp3/The_Spot.mp3"
+    name: "Selfish",
+    producer: "Kanye West",
+    path: "./mp3/Selfish.mp3"
   },
 
   {
@@ -87,6 +87,30 @@ let track_list = [
     name: "Baby Blue",
     producer: "Mark Ronson",
     path: "./mp3/Baby_Blue.mp3"
+  },  
+
+  {
+    name: "Grindin",
+    producer: "The Neptunes",
+    path: "./mp3/Grindin.mp3"
+  },  
+
+  {
+    name: "Best Friend",
+    producer: "Dr. Luke",
+    path: "./mp3/Best_Friend.mp3"
+  },  
+
+  {
+    name: "Whoa",
+    producer: "Buckwild",
+    path: "./mp3/Whoa.mp3"
+  },  
+
+  {
+    name: "Bodak Yellow",
+    producer: "J. White Did It",
+    path: "./mp3/Bodak_Yellow.mp3"
   },  
 ];
 
